@@ -1,5 +1,38 @@
 # Agentic AI
 
+## Landscape overview
+
+**LLM**: The actual AI model.
+
+**Chat/App**: End-user application.
+
+**Coding Assistant**: Helps developers with tasks such as autocomplete and explaining code.
+
+**Agentic system**: Can perform multi-step actions autonomously. An agent gets a goal, not a specific instruction.
+
+**IDE**: Development environment.
+
+**Platform**: Infrastructure for companies.
+
+### AI Landscape Overview (2026)
+
+| Brand | LLMs | Chat / App | Coding Assistant | Agentic System | IDE | Enterprise Platform |
+| --- | --- | --- | --- | --- | --- | --- |
+| OpenAI | GPT-4o, GPT-5 | ChatGPT | Codex | Codex, Operator | - | OpenAI Platform |
+| Microsoft | (uses GPT + others) | Copilot | GitHub Copilot | Copilot Agents | VSC | Azure AI, Copilot Studio |
+| GitHub | (uses OpenAI, Claude, Gemini models) | - | GitHub Copilot | Copilot Agent Mode | - | GitHub Enterprise |
+| Anthropic | Claude Haiku, Sonnet, Opus | Claude | Claude Code | Claude Code | Lives in a terminal | Anthropic API |
+| Google | Gemini Flash, Pro, Ultra | Gemini | Gemini Code Assist | Gemini Agents | - | Vertex AI |
+| Cursor | Uses GPT, Claude, Gemini | Cursor Chat | Cursor AI | Cursor Agent | Cursor (VSC fork) | - |
+| Codeium | Proprietary + external | Windsurf | Windsurf AI | Windsurf Agent | Windsurf | Windsurf Enterprise |
+| Amazon | Nova | Q Chat | Amazon Q Developer | Amazon Q Agents | - | Bedrock |
+| Alibaba | Qwen | Qwen Chat | Qwen Code | Qwen Agents | - | Alibaba Cloud AI |
+| xAI | Grok | Grok | Grok Code | Grok Agent | - | xAI Platform |
+| Jetbrains | - | - | - | AI assistant | IntelliJ | - |
+| Cognition | (uses own + external models) | Devin App | Devin | Devin | - | Devin Platform |
+| Meta | Llama | Meta AI | - | - | - | Llama Platform |
+| Mistr | Mistral Large, Codestral | Le Chat | Codestral | Mistral Agents | - | Mistral Platform |
+
 ## Copilot agents
 
 ### robotdog example
