@@ -59,12 +59,18 @@ Result: skill was used. Only one task was implemented.
 
 ## OpenAI
 
-Create a 5€ billing
-Get the API key
+Create a 5€ billing and get the API key
+
 Add the key to the .env file (secrets will be ignored by Cursor and github):
+
 OPENAI_API_KEY=sk-proj-...
+
 Create an OpenAI object, pass a message and get a response:
+
 from openai import OpenAI
+
 openai = OpenAI()
+
 response= openai.chat.completions.create(model="gpt...", message="what time is it?")
+
 print(response.choices[0].message.content)
