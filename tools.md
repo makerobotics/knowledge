@@ -4,6 +4,12 @@
 
 git log --follow "filename": keeps history of the file commits
 
+Conflict between main and remote origin/main:
+git switch main
+git fetch origin
+git merge origin/main
+Then solve the conflict and commit
+
 # Python
 
 [https\://docs.python.org/3/contents.html](https://docs.python.org/3/contents.html)
