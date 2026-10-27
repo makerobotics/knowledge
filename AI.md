@@ -1,6 +1,4 @@
-# Agentic AI
-
-## Landscape overview
+# Landscape overview
 
 **LLM**: The actual AI model.
 
@@ -14,7 +12,7 @@
 
 **Platform**: Infrastructure for companies.
 
-### AI Landscape Overview (2026)
+## AI Landscape Overview (2026)
 
 | Brand | LLMs | Chat / App | Coding Assistant | Agentic System | IDE | Enterprise Platform |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -33,9 +31,19 @@
 | Meta | Llama | Meta AI | - | - | - | Llama Platform |
 | Mistr | Mistral Large, Codestral | Le Chat | Codestral | Mistral Agents | - | Mistral Platform |
 
-## Copilot agents
+# General information
 
-### robotdog example
+**Skill**: Cookbook for a special activity. Can use own scripts for his tasks  
+**Agent**: team member supporting you for a task  
+**Prompt**: specific instruction (like: /create-readme)
+
+# Copilot
+
+## Agent handling
+
+[awesome templates](https://github.com/github/awesome-copilot)
+
+## robotdog example
 
 **SKILL.md**: explain how to code parts of a task list, step by step, using some rules. Check the finished tasks.
 
@@ -43,9 +51,9 @@
 
 1. Fist attempt
 
-Chat prompt used to start the implementation (8mn 30 sec):&nbsp;
+Chat prompt used to start the implementation (8mn 30 sec):
 
-*Implement the @task-list*
+`Implement the @task-list`
 
 Result: skill was not used \!\!
 
@@ -53,24 +61,20 @@ Result: skill was not used \!\!
 
 Chat prompt used to start the implementation (1mn 30 sec):&nbsp;
 
-*Use the @skill.md file to implement the @task-list.md*
+`Use the @skill.md file to implement the @task-list.md`
 
 Result: skill was used. Only one task was implemented.
 
-## OpenAI
+# OpenAI
 
-Create a 5€ billing and get the API key
-
+Create a 5€ billing and get the API key.  
 Add the key to the .env file (secrets will be ignored by Cursor and github):
 
-OPENAI_API_KEY=sk-proj-...
+`OPENAI_API_KEY=sk-proj-...`
 
 Create an OpenAI object, pass a message and get a response:
-
-from openai import OpenAI
-
+```from openai import OpenAI
 openai = OpenAI()
-
 response= openai.chat.completions.create(model="gpt...", message="what time is it?")
-
 print(response.choices[0].message.content)
+```
