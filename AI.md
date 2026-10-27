@@ -31,14 +31,30 @@
 | Meta | Llama | Meta AI | - | - | - | Llama Platform |
 | Mistr | Mistral Large, Codestral | Le Chat | Codestral | Mistral Agents | - | Mistral Platform |
 
+## Benchmark LLMs
+
+[artificialanalysis](https://artificialanalysis.ai/)
+
 # General information
 
 ## Definitions
 
 **Skill**: Cookbook for a special activity. Can use own scripts for his tasks  
 **Agent**: team member supporting you for a task  
-**Prompt**: specific instruction (like: /create-readme)
-**React prompting**: Use the LLM to simulate thoughts
+**Prompt**: specific instruction (like: /create-readme)  
+**React prompting**: Use the LLM to simulate thoughts  
+
+Design patterns (Anthropic):  
+**LLM router**: directs input to a specialized sub-task (LLM)  
+**Prompt chaining**: decompose into fixed sub-tasks. Use a coordinator at input and an aggregator at output  
+**Parallelization**: breaking down tasks and running multiple subtasks concurrently
+**Orchestrator worker**: complex tasks are broken down dynamically and combined(all are LLM)  
+**Evaluator-optimizer**: LLM output is validated by another  
+In contrast:  
+Agent is a an LLM in a loop with tools to achieve a goal  
+Risks: unpredictable path, costs and output. Needs some monitoring to evaluate the result depending on the goal. LLM as a judge. Guardrails (tests) are used to check the safety.  
+Always start on a business problem (not "I need an agent"). KPI are necessary to evaluate the success.  
+Anthropomorphizing: Agents are not people. They generate text. Don't plan persons in boxes. Start simple and add complexity.  
 
 # MCP (Model Context Protocol)
  
