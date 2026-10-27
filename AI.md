@@ -33,9 +33,28 @@
 
 # General information
 
+## Definitions
+
 **Skill**: Cookbook for a special activity. Can use own scripts for his tasks  
 **Agent**: team member supporting you for a task  
 **Prompt**: specific instruction (like: /create-readme)
+**React prompting**: Use the LLM to simulate thoughts
+
+# MCP (Model Context Protocol)
+ 
+Firecrawl: web server for MCP services
+
+Create an MCP server in Python (details in modelcontextprotocol):
+- Add [Python](https://github.com/modelcontextprotocol/python-sdk) and [MCP](https://modelcontextprotocol.io) sdk to the chat (paste the links)
+- Use the context of both websides to generate some dummy mcp server. Use FastMCP instead of the low level abstractions.
+- Generate a local mcp (stdio) or a web based (http)
+- debug interface (see training)
+- Use IDE to create a new MCP server (adds config to mcp.json)
+
+Install an MCP server in vscode:
+- Add json string to .vscode/mcp.json
+- Add API key for access
+- Click "start" in the json file to start the MCP server
 
 # Copilot
 
