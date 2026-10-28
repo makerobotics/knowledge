@@ -39,12 +39,15 @@
 
 ## Definitions
 
+### Basics
+
 **Skill**: Cookbook for a special activity. Can use own scripts for his tasks  
 **Agent**: team member supporting you for a task  
 **Prompt**: specific instruction (like: /create-readme)  
 **React prompting**: Use the LLM to simulate thoughts  
 
-Design patterns (Anthropic):  
+### Design patterns (by Anthropic)
+
 **LLM router**: directs input to a specialized sub-task (LLM)  
 **Prompt chaining**: decompose into fixed sub-tasks. Use a coordinator at input and an aggregator at output  
 **Parallelization**: breaking down tasks and running multiple subtasks concurrently
@@ -55,6 +58,14 @@ Agent is a an LLM in a loop with tools to achieve a goal
 Risks: unpredictable path, costs and output. Needs some monitoring to evaluate the result depending on the goal. LLM as a judge. Guardrails (tests) are used to check the safety.  
 Always start on a business problem (not "I need an agent"). KPI are necessary to evaluate the success.  
 Anthropomorphizing: Agents are not people. They generate text. Don't plan persons in boxes. Start simple and add complexity.  
+
+### Different types of offerings concerning AI agents
+
+**Agent builders**: n8n, ElevenLabs (for non technical people to **build** agents)  
+**Products**: Claude code, Cowork, OpenClaw (for non technical people to **use** agents)  
+**Runtimes**: AWS Lambda (Technical people can **execute** their agents)  
+**Frameworks**: OpenAI Agents SDK, Langgraph/Lagchain (Technical people can **develop** agents)
+
 
 # MCP (Model Context Protocol)
  
