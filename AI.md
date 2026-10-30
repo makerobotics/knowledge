@@ -124,3 +124,42 @@ openai = OpenAI()
 response= openai.chat.completions.create(model="gpt...", message="what time is it?")
 print(response.choices[0].message.content)
 ```
+
+## Huggingface
+
+[huggingface](https://huggingface.co/)  
+- Create an account
+- Create a token (select "write")
+- Place into .env file
+- Login to HF in terminal: `uvx hf auth login --token YOUR_TOKEN`
+- Check for login: `uvx hf auth whoami`
+- Deploy: `uv run gradio deploy`
+
+!! Pricing changed in 07.2026 !!
+
+## Render
+
+[Render](https://render.com/)
+- Sign in with github account
+- Upload code to github
+- Follow instructions from Ed Donner
+
+## Google
+
+[text](https://console.cloud.google.com/)
+
+Variante A: Service Account (für einen Server)
+1. Technisches Konto erstellen  
+
+1. Öffne die Google Cloud Console.
+2. Aktiviere die Google Drive API.
+3. Öffne „IAM & Verwaltung“ → „Dienstkonten“.
+4. Erstelle ein Dienstkonto (Service Account).
+5. Erstelle einen Schlüssel im JSON-Format und speichere ihn auf deinem Server, zum Beispiel als service-account.json.
+
+2. Zieldatei freigeben
+Öffne die TXT-Datei in Google Drive und teile sie mit der E-Mail-Adresse des Service Accounts. Diese sieht ungefähr so aus:
+
+mein-dienstkonto@mein-projekt.iam.gserviceaccount.com
+
+Gib dem Dienstkonto Bearbeitungsrechte. Du musst nicht deinen gesamten Drive freigeben, sondern nur die betreffende Datei.
