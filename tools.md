@@ -34,6 +34,19 @@ Test the connection (no more password necessary):
 
 [Cheat sheet](https://mathspp.com/blog/uv-cheatsheet)
 
+Create a project and install the dependencies directly from `pyproject.toml` and `uv.lock`:  
+`uv sync`
+
+Add dependencies while programming:  z
+`uv add <package>` 
+This updates the dependency files
+
+To deploy a project based on `requirements.txt`:  
+Update the `requirements.txt` file from `pyproject.toml`  
+`uv pip compile pyproject.toml -o requirements.txt`  
+or from the `uv.lock` file  
+`uv export --format requirements.txt -o requirements.txt`
+
 # Visual Studio code
 
 ## Skills
