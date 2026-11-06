@@ -124,6 +124,7 @@ openai = OpenAI()
 response= openai.chat.completions.create(model="gpt...", message="what time is it?")
 print(response.choices[0].message.content)
 ```
+In this example, the object is created without parameters by using the .env file.
 
 ## Huggingface
 
@@ -163,3 +164,18 @@ Variante A: Service Account (für einen Server)
 mein-dienstkonto@mein-projekt.iam.gserviceaccount.com
 
 Gib dem Dienstkonto Bearbeitungsrechte. Du musst nicht deinen gesamten Drive freigeben, sondern nur die betreffende Datei.
+
+## OpenAI framework
+
+See documentation in OpenAI Agents SDK
+
+`agent class` = LLM + system prompt + tools  
+`agents as tools` and handoff used for collaboration  
+`Guardrails` represent controls
+
+Show the object structure:  
+`result.to_input_list()`
+
+### Tracing
+
+[Trace platform from OpenAI](http://platform.openai.com/traces)

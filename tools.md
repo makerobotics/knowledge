@@ -14,9 +14,19 @@ Then solve the conflict and commit
 
 # Python
 
+## General
+
 [https\://docs.python.org/3/contents.html](https://docs.python.org/3/contents.html)
 
 An \_\_init\_\_.py file defines a package.
+
+## asyncio
+
+Simpler aproach than multithreading. Use it if the calculation is not cpu consuming but waiting for servers to reply.  
+`async def` are called coroutines. Calling it returns a coroutine object.  
+Calling `await` schedules the coroutine for execution.  
+The `event loop`is calling the coroutines which are awaited until they are waiting again.  
+To run all the coroutines in "parallel", use `results = await asyncio.gather(cr1(), cr2())`
 
 # SSH
 
