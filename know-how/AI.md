@@ -168,6 +168,7 @@ Gib dem Dienstkonto Bearbeitungsrechte. Du musst nicht deinen gesamten Drive fre
 ## OpenAI framework
 
 See documentation in OpenAI Agents SDK
+[OpenAI Agents SDK](https://openai.github.io/openai-agents-python/)
 
 `agent class` = LLM + system prompt + tools  
 `agents as tools` and handoff used for collaboration  

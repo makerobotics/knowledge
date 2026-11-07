@@ -17,6 +17,9 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
+Create an .env file  
+Run uv sync to get the necessary dependencies
+
 Replace the placeholders with this repository's URL and local directory name.
 
 ## Help
