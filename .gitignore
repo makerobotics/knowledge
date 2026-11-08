@@ -13,3 +13,5 @@ wheels/
 # Text files
 *.log
 *.txt
+
+comparison_report.md
