@@ -8,6 +8,11 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "deepagents>=0.7.41",
+    "langchain>=1.5.2",
+    "langchain-openai>=1.8.5",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.24",
     "openai>=3.42.0",
     "openai-agents>=0.24.0",
     "pydantic>=2.14.2",
